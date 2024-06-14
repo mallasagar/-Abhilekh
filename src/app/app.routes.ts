@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { ErrorComponent } from './shared/Components/error/error.component';
+import { LandingpageComponent } from './shared/Components/landingpage/landingpage.component';
 
 
 export const routes: Routes = [
-        {path:'',component:AppComponent},
+        {path:'',component:LandingpageComponent},
         {path: 'admin',loadChildren: () => import('./modules/admin.Modules/admin.module').then(m => m.AdminModule) },
         {path: 'users', loadChildren: () => import('./modules/user.Modules/user.module').then(m => m.UserModule ) },
         // {path:'login',component:AuthComponent},
