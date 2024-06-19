@@ -1,0 +1,20 @@
+.abilekh {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right,  cyan,blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.blur{
+  backdrop-filter: blur(2px ) brightness(0.7);
+}
+
+.content{
+  position: relative;
+  z-index: 1;
+  perspective:2300px;
+}
+
+.parallax {
+  /* Additional styles for the parallax element */
+  transition: 0.45s cubic-bezier(.03,.74,.36,.99);
+}
